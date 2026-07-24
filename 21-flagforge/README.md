@@ -1,4 +1,4 @@
-# 🚩 FlagForge — Feature Flag & A/B Testing Platform
+# FlagForge — Feature Flag & A/B Testing Platform
 
 Enterprise-grade feature flag management and A/B experiment platform for the fictional
 **CodeAtlas** engineering team. Built to demonstrate the patterns used by LaunchDarkly,
@@ -27,7 +27,7 @@ Your App (SDK calls)          FlagForge API              Dashboard
     PostgreSQL: users · flags · experiments · experiment_events · audit_log
 ```
 
-## Design decisions (interview talking points)
+## Design
 
 1. **Deterministic bucketing with FNV-1a hash — no database lookup per evaluation.**
    Most flag systems (LaunchDarkly, Statsig) hash `userId:flagKey` to assign a 0–99
